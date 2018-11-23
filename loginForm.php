@@ -17,7 +17,7 @@
         if ($_POST != null) {
             # Conexión a la bdd
             $conn = mysqli_connect('localhost','jose','jose123');
-            mysqli_select_db($conn, 'Usuarios');
+            mysqli_select_db($conn, 'usuarios');
             $consulta = "SELECT * FROM Usuarios;";
             $resultat = mysqli_query($conn, $consulta);
             if (!$resultat) {
